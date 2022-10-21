@@ -18,7 +18,40 @@
         <label for="user_password">Password:</label>
         <input type="password" name="user_password" id="user_password" placeholder="Password">
 
+        <label for="user_date">Date:</label>
+        <input type="date" name="user_date" id="user_date">
 
+        <select name="fashion">
+            <optgroup label="Clothing">
+              <option value="t_shirt">T-Shirts</option>
+              <option value="sweater">Sweaters</option>
+              <option value="coats">Coats</option>
+            </optgroup>
+            <optgroup label="Foot Wear">
+              <option value="sneakers">Sneakers</option>
+              <option value="boots">Boots</option>
+              <option value="sandals">Sandals</option>
+            </optgroup>
+        </select>
+        <fieldset>
+            <legend>What would you like to drink?</legend>
+          
+            <div>
+              <input type="radio" name="drink" id="coffee" value="coffee">
+              <label for="coffee">Coffee</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="drink" id="tea" value="tea">
+              <label for="tea">Tea</label>
+            </div>
+          
+            <div>
+              <input type="radio" name="drink" id="soda" value="soda">
+              <label for="soda">Soda</label>
+            </div>
+          
+          </fieldset>
     </form>
 </body>
 </html>
