@@ -1,6 +1,15 @@
 * {
     --color-text: black;
 }
-.footer{
-    color: var(--color-text)
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(185, 243, 243);
+}
+.loginForm{
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
 }
