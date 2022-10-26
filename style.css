@@ -34,6 +34,7 @@ label span {
     text-align: right;
 }
 
+
 input, textarea {
     font: 1em sans-serif;
     width: 250px;
@@ -68,4 +69,7 @@ button {
 
 label {
   position: relative;
+}
+input:invalid{
+    border: 2px solid red;
 }
