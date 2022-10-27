@@ -70,6 +70,6 @@ button {
 label {
   position: relative;
 }
-input:invalid{
+input:user-invalid{
     border: 2px solid red;
 }

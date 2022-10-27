@@ -14,3 +14,13 @@ price.addEventListener("input", () => {
 color.addEventListener("input", () => {
     body.style.backgroundColor = color.value;
 })
+
+
+
+
+
+/* 
+to dos:
+- make a custom check box
+
+*/ 
