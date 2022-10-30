@@ -45,4 +45,12 @@ fieldset{
   }
   input{
     margin-left: 5px;
+    outline: none;
+  }
+  input:focus:invalid{
+    background-color: #F09A9D;
+    border: 2px solid black;
+   
+    border-radius: 3px;
+    outline: none;
   }
