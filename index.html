@@ -8,13 +8,30 @@
   <body>
 
 
-    <form action="/post-to-server" method="post">
-      <ul>
-        <li><label for="name">Name:</label></li>
-        <li><input type="text" id="name" name="name" required></li>
-        <li><label for="email">Mail:</label></li>
-        <li><input type="email" id="email" name="email" required></li>
-      </ul>
+    <form action="/post-to-imaginary-server" method="post">
+      <fieldset>
+        <ul>
+          <li>
+            <label for="userName">User name:</label>
+            <input type="text" id="userName" name="userName" required>
+          </li>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+          </li>
+          <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </li>
+          <li>
+            <label for="tel">Tel:</label>
+            <input type="tel" id="tel" name="tel" required>
+          </li>
+          <li>
+            <button type="submit">Send it!</button>
+          </li>
+        </ul>
+    </fieldset>
     </form>
   </body>
 </html>

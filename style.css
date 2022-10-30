@@ -30,7 +30,19 @@
       background-color: #B2D6FF; /* Blue */
     }
   }
-
+fieldset{
+  background-color: #8ec2ff;
+  border-radius: 5px;
+  border: 2px solid black;
+}
   ul{
     list-style: none;
+  }
+  li{
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  input{
+    margin-left: 5px;
   }
