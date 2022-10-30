@@ -6,6 +6,9 @@
   body{
     height: 100vh;
     width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /* Mobile Styles */
   @media only screen and (max-width: 400px) {
@@ -26,4 +29,8 @@
     body {
       background-color: #B2D6FF; /* Blue */
     }
+  }
+
+  ul{
+    list-style: none;
   }
