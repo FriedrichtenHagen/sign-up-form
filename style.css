@@ -49,8 +49,7 @@ fieldset{
   }
   input:focus:invalid{
     background-color: #F09A9D;
-    border: 2px solid black;
-   
+    border: 2px solid #f45d62;
     border-radius: 3px;
     outline: none;
   }
