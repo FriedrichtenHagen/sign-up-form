@@ -31,12 +31,14 @@
     }
   }
 fieldset:focus-within{
-  background-color:#47b7f0;
+  scale: 1.1;
+  transition: 2s;
 }
 fieldset{
   background-color: #8ec2ff;
   border-radius: 5px;
   border: 2px solid black;
+  transition: 2s;
 }
   ul{
     list-style: none;
