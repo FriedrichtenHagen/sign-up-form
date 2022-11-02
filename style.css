@@ -30,6 +30,9 @@
       background-color: #B2D6FF; /* Blue */
     }
   }
+fieldset:focus-within{
+  background-color:#47b7f0;
+}
 fieldset{
   background-color: #8ec2ff;
   border-radius: 5px;
