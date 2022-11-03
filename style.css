@@ -1,7 +1,9 @@
-
-  body{
-    margin: 0px;
-  }
+*{
+  color: white;
+}
+body{
+  margin: 0px;
+}
 .content{
   height: 100vh;
   width: 100vw;
@@ -18,4 +20,30 @@
   background-color: #142730;
   width: 60vw;
   height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.topMessage{
+  padding: 20px;
+}
+form{
+  font-size: 10px;
+  margin: 15px;
+}
+.line1, .line2, .line3{
+  margin: 5px;
+}
+input{
+  width:10em; 
+  color: black;
+  font-size: 10px;
+  outline: none;
+}
+
+.submission{
+  padding: 20px;
+}
+button{
+  color: black;
 }
