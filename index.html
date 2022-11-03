@@ -2,44 +2,47 @@
 <html lang='en'>
   <head>
     <meta charset='UTF-8'/>
-    <title>Form with regex</title>
+    <title>Sign up Form</title>
     <link rel='stylesheet' href='style.css'/>
   </head>
   <body>
+    <div class="content">
+      <div class="left">
+        <div class="logoOverlay">
+          <img src="" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <div class="topMessage">
+          This is a online service proudly provided by Friedrich ten Hagen and NASA. Discover an extraterrestrial life forms from the comfort of your home. 
+          Sign up now to explore the universe! 
+        </div>
+        <div class="inputfield">
+          <form action="perform-fictitious-POST-request">
+            <fieldset>
+              <legend>              </legend>
+              <div class="line1">
+                <input type="text">
+                <input type="text">
+              </div>
+              <div class="line2">
+                <input type="email">
+                <input type="tel">
+              </div>
+              <div class="line3">
+                <input type="password">
+                <input type="password">
+              </div>
+            </fieldset>
+          </form>
+        </div>
+        <div class="submission">
+          <button type="submit">Create Account</button>
+          <p>Already have an account? <a href="">Log in</a></p>
+        </div>
+      </div>
+    </div>
 
-
-    <form action="/post-to-imaginary-server" method="post">
-      <fieldset>
-        <ul>
-          <li>
-            <label for="userName">User name:</label>
-            <input type="text" id="userName" name="userName" pattern="[a-zA-Z]{1}\.[a-zA-Z0-9]{3,}" placeholder="x.abc" oninvalid="this.setCustomValidity('Please enter the correct format bud')" title="something cool" required>
-          </li>
-          <li>
-            <label for="name" autocomplete>Name:</label>
-            <input type="text" id="name" name="name" placeholder="Friedrich" required>
-          </li>
-          <li>
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="a3bD@bigcorp.eu" name="email" required>
-          </li>
-          <li>
-            <label for="tel">Tel:</label>
-            <input type="tel" id="tel" name="tel" pattern="^[0-9]{10}$|\d{3}[\/. ]\d{3}[\/. ]\d{4}" placeholder="111/111/1111" required>
-          </li>
-          <li>
-            <button type="submit">Send it!</button>
-          </li>
-        </ul>
-    </fieldset>
-    </form>
-    <script>
-      const emailInput = document.querySelector("#email")
-      emailInput.addEventListener("input", e => {
-        if(emailInput.value.match(/[a-zA-Z0-9]{1,}@[a-zA-Z0-9]{2,}\.[a-zA-Z]{2,}/gm)){
-          alert("its a match made in heaven")
-        }
-      })
-    </script>
+    
   </body>
 </html>

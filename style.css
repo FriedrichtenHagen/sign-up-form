@@ -1,63 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+
   body{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0px;
   }
-  /* Mobile Styles */
-  @media only screen and (max-width: 400px) {
-    body {
-      background-color: #F09A9D; /* Red */
-    }
-  }
-  
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-      background-color: #F5CF8E; /* Yellow */
-    }
-  }
-  
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    body {
-      background-color: #B2D6FF; /* Blue */
-    }
-  }
-fieldset:focus-within{
-  scale: 1.1;
-  transition: 2s;
+.content{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
 }
-fieldset{
-  background-color: #8ec2ff;
-  border-radius: 5px;
-  border: 2px solid black;
-  transition: 2s;
+.left{
+  background-image: url(evgeni-tcherkasski-pgXY8q_J15s-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 40vw;
+  height: 100vh;
 }
-  ul{
-    list-style: none;
-  }
-  li{
-    margin: 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-  input{
-    margin-left: 5px;
-    outline: none;
-  }
-  input:focus:invalid{
-    background-color: #F09A9D;
-    border: 2px solid #f45d62;
-    border-radius: 3px;
-    outline: none;
-  }
-  input:valid{
-    border: 2px solid green;
-  }
+.right{
+  background-color: #142730;
+  width: 60vw;
+  height: 100vh;
+}
