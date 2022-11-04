@@ -93,14 +93,14 @@ input{
 }
 button{
   color: black;
-  background-color: #f8f9fa;
-  border: 1px solid #f8f9fa;
+  background-color: #9ad6ae;
+  border: 1px solid #9ad6ae;
   border-radius: 15px;
   color: #3c4043;
   font-family: 'Source Code Pro', monospace;
   font-size: 9px;
   padding: 7px;
-  height: 36px;
+
   min-width: 54px;
   cursor: pointer;
   user-select: none;
@@ -113,4 +113,13 @@ button:hover{
 p{
   margin: 5px;
   margin-left: 0px;
+}
+.already, a{
+  font-size: 0.8vw;
+  text-decoration: none;
+  
+}
+a{
+  color: #9ad6ae;
+  font-weight: bold;
 }
