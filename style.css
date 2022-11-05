@@ -134,7 +134,10 @@ label#pwlabel1, label#pwlabel2{
   display: flex;
   justify-content: space-between;
 }
-label#pwlabel1::after, label#pwlabel2::after{
+.required{
+  /*just to attach the pseudo element ::after*/
+}
+.required::after{
   content: "Passwords dont match";
   color: red;
 }
