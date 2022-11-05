@@ -46,16 +46,16 @@
                 </div>
                 <div class="tel">
                   <label for="tel">TEL</label>
-                  <input type="tel" id="tel" required>
+                  <input type="tel" id="tel" required pattern="[0-9]{7,}">
                 </div>
               </div>
               <div class="line3">
                 <div class="password1">
-                  <label for="password1">PASSWORD</label>
+                  <label for="password1" id="pwlabel1">PASSWORD</label>
                   <input type="password" id="password1" required>
                 </div>
                 <div class="password2">
-                  <label for="password2">CONFIRM PASSWORD</label>
+                  <label for="password2" id="pwlabel2">CONFIRM PASSWORD</label>
                   <input type="password" id="password2" required>
                 </div>
               </div>
