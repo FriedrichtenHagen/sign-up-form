@@ -29,7 +29,7 @@ body{
 .logoOverlay{
   width: 40vw;
   display: flex;
-  margin-bottom: 327px;
+  margin-bottom: 48vh;
   display: flex;
   justify-content: center;
   background:rgba(0, 0, 0, 0.2);
@@ -81,11 +81,11 @@ label{
 input{
   width: 16vw;
   color: black;
-  font-size: 10px;
+  font-size: 1.2em;
   font-family: 'Source Code Pro', monospace;
   outline: none;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 input:focus{
   border: 1px solid rgb(156, 189, 248);
@@ -102,12 +102,11 @@ button{
   color: black;
   background-color: #9ad6ae;
   border: 1px solid #9ad6ae;
-  border-radius: 15px;
+  border-radius: 6px;
   color: #3c4043;
   font-family: 'Source Code Pro', monospace;
-  font-size: 9px;
-  padding: 7px;
-
+  font-size: 1.3em;
+  padding: 17px;
   min-width: 54px;
   cursor: pointer;
   user-select: none;
