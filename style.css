@@ -137,6 +137,7 @@ label#pwlabel1, label#pwlabel2{
 .required::after{
   content: "Passwords dont match";
   color: red;
+
 }
 
 @media screen and (max-width: 600px){
@@ -180,5 +181,10 @@ label#pwlabel1, label#pwlabel2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+  .required::after{
+    font-size: 0.6rem;
+    width: 65px;
+
   }
 }
