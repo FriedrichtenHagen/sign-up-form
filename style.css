@@ -1,20 +1,20 @@
 
+:root{
+  height: 100%;
+  width: 100%;
+}
 *{
   color: white;
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.2vw;
 }
-@media screen and (max-width: 600px) {
- *{
-  font-size: 10px;
- }
-}
+
 body{
   margin: 0px;
+  height: 100%;
 }
 .content{
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: flex;
 }
 .left{
@@ -22,7 +22,7 @@ body{
   background-position: center;
   background-size: cover;
   width: 40vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -42,7 +42,7 @@ body{
   color: white;
   display: flex;
   align-items: center;
-  font-size: 2em;
+  font-size: 3rem;
 }
 img{
   margin-right: 12px;
@@ -50,7 +50,7 @@ img{
 .right{
   background-color: #142730;
   width: 60vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,10 +60,10 @@ img{
   padding: 20px;
 }
 .callToAction{
-  margin-top: 2.1vh;
+  margin-top: 2rem;
 }
 form{
-  font-size: 10px;
+  font-size: 1rem;
   margin: 15px;
 }
 .line1, .line2, .line3{
@@ -76,10 +76,10 @@ form{
   flex-direction: column;
 }
 label{
-  font-size: 0.7vw;
+  font-size: 1rem;
 } 
 input{
-  width: 16vw;
+  width: 15rem;
   color: black;
   font-size: 1.2em;
   font-family: 'Source Code Pro', monospace;
@@ -105,7 +105,7 @@ button{
   border-radius: 6px;
   color: #3c4043;
   font-family: 'Source Code Pro', monospace;
-  font-size: 1.3em;
+  font-size: 1.3rem;
   padding: 17px;
   min-width: 54px;
   cursor: pointer;
@@ -121,7 +121,7 @@ p{
   margin-left: 0px;
 }
 .already, a{
-  font-size: 0.8vw;
+  font-size: 0.8rem;
   text-decoration: none;
   
 }
@@ -133,10 +133,52 @@ label#pwlabel1, label#pwlabel2{
   display: flex;
   justify-content: space-between;
 }
-.required{
-  /*just to attach the pseudo element ::after*/
-}
+
 .required::after{
   content: "Passwords dont match";
   color: red;
+}
+
+@media screen and (max-width: 600px){
+  .content{
+    flex-direction: column;
+  }
+  .left{
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+  }
+  .logoOverlay{
+    margin-bottom: 0px ;
+    background-position: center;
+    background: transparent;
+  }
+  .logoCenter{
+    height: 10vh;
+  }
+  .right{
+    width: 100%;
+    height: 85vh;
+  }
+  .topMessage{
+    padding: 5px;
+    text-align: center;
+  }
+  .callToAction{
+    margin-top: 1rem;
+  }
+  .inputfield{
+    display: flex;
+    justify-content: center;
+  }
+  .line1, .line2, .line3{
+    flex-direction: column;
+  }
+  .submission{
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
