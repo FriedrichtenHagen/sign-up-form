@@ -185,6 +185,5 @@ label#pwlabel1, label#pwlabel2{
   .required::after{
     font-size: 0.6rem;
     width: 65px;
-
   }
 }
