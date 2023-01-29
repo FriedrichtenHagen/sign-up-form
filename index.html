@@ -30,13 +30,15 @@
           <div class="inputfield">
             <form action="perform-fictitious-POST-request" id="myForm" novalidate>
               <div class="line1">
-                <div class="firstname">
+                <div class="firstName">
                   <label for="firstName">FIRST NAME</label>
                   <input type="text" id="firstName" minlength="2" required pattern="[a-zA-Z\s]{2,}">
+                  <span class="error" aria-live="polite"></span>
                 </div>
-                <div class="lastname">
+                <div class="lastName">
                   <label for="lastName">LAST NAME</label>
                   <input type="text" id="lastName" minlength="2" required pattern="[a-zA-Z\s]{2,}">
+                  <span class="error" aria-live="polite"></span>
                 </div>
               </div>
               <div class="line2">

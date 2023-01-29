@@ -71,7 +71,7 @@ form{
   display: flex;
   justify-content: space-between;
 }
-.firstname, .lastname, .email, .tel, .password1, .password2{
+.firstName, .lastName, .email, .tel, .password1, .password2{
   display: flex;
   flex-direction: column;
 }
