@@ -28,7 +28,7 @@
             <div class="callToAction">Sign up <i>now</i> to explore the universe! </div>
           </div>
           <div class="inputfield">
-            <form action="perform-fictitious-POST-request" id="myForm">
+            <form action="perform-fictitious-POST-request" id="myForm" novalidate>
               <div class="line1">
                 <div class="firstname">
                   <label for="firstName">FIRST NAME</label>
@@ -42,7 +42,8 @@
               <div class="line2">
                 <div class="email">
                   <label for="email">EMAIL</label>
-                  <input type="email" id="email" required>
+                  <input type="email" id="email" minlength="9" maxlength="15" required>
+                  <span class="error" aria-live="polite"></span>
                 </div>
                 <div class="tel">
                   <label for="tel">TEL</label>
