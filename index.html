@@ -44,22 +44,25 @@
               <div class="line2">
                 <div class="email">
                   <label for="email">EMAIL</label>
-                  <input type="email" id="email" minlength="9" maxlength="15" required>
+                  <input type="email" id="email" minlength="9" required>
                   <span class="error" aria-live="polite"></span>
                 </div>
-                <div class="tel">
-                  <label for="tel">TEL</label>
-                  <input type="tel" id="tel" required pattern="[0-9]{7,}">
+                <div class="telefon">
+                  <label for="telefon">TEL</label>
+                  <input type="tel" id="telefon" required minlength="7" maxlength="7" pattern="[0-9]*">
+                  <span class="error" aria-live="polite"></span>
                 </div>
               </div>
               <div class="line3">
                 <div class="password1">
                   <label for="password1" id="pwlabel1">PASSWORD</label>
                   <input type="password" id="password1" required>
+                  <span class="error" aria-live="polite"></span>
                 </div>
                 <div class="password2">
                   <label for="password2" id="pwlabel2">CONFIRM PASSWORD</label>
                   <input type="password" id="password2" required>
+                  <span class="error" aria-live="polite"></span>
                 </div>
               </div>
             </form>

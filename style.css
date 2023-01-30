@@ -71,7 +71,7 @@ form{
   display: flex;
   justify-content: space-between;
 }
-.firstName, .lastName, .email, .tel, .password1, .password2{
+.firstName, .lastName, .email, .telefon, .password1, .password2{
   display: flex;
   flex-direction: column;
 }
@@ -180,6 +180,7 @@ label#pwlabel1, label#pwlabel2{
   .right{
     width: 100%;
     height: 85vh;
+    overflow-y: scroll;
   }
   .topMessage{
     padding: 5px;
