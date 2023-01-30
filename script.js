@@ -98,8 +98,52 @@ function showTelefonError(){
   telefonError.className = "error active"
 }
 // password validation
+// password1
+const password1 = document.getElementById("password1");
+const password1Error = document.querySelector(".password1>.error")
 
+password1.addEventListener("input", (e) => {
+  checkPasswordIdenticallity(e)
+  if(password1.validity.valid){
+    password1Error.textContent = ""
+    password1Error.className = "error"
+  }else{
+    showPassword1Error()
+  }
+});
+function showPassword1Error(){
+  if(password1.validity.tooShort){
+    password1Error.textContent = `Your password should be ${password1.minLength} characters. You entered ${password1.value.length} characters`
+  }
+  else if(password1.validity.tooLong){
+    // never true on chrome and firefox, since input length is limited to max
+    password1Error.textContent = `The number should be 7 characters. You entered ${password1.value.length} characters`
+  }
+  password1Error.className = "error active"
+}
+// password2
+const password2 = document.getElementById("password2");
+const password2Error = document.querySelector(".password2>.error")
 
+password2.addEventListener("input", (e) => {
+  checkPasswordIdenticallity(e)
+  if(password2.validity.valid){
+    password2Error.textContent = ""
+    password2Error.className = "error"
+  }else{
+    showPassword2Error()
+  }
+});
+function showPassword2Error(){
+  if(password2.validity.tooShort){
+    password2Error.textContent = `Your password should be ${password2.minLength} characters. You entered ${password2.value.length} characters`
+  }
+  else if(password2.validity.tooLong){
+    // never true on chrome and firefox, since input length is limited to max
+    password2Error.textContent = `The number should be 7 characters. You entered ${password2.value.length} characters`
+  }
+  password2Error.className = "error active"
+}
 // compare password and password confirmation
 function checkPasswordIdenticallity(e){
   const p1 = document.querySelector('#password1').value
@@ -108,6 +152,10 @@ function checkPasswordIdenticallity(e){
       e.preventDefault()
       pwlabel1.classList.add("required") 
       pwlabel2.classList.add("required") 
+  }
+  if(p1 === p2){
+    pwlabel1.classList.remove("required") 
+    pwlabel2.classList.remove("required") 
   }
 }
 
@@ -131,6 +179,14 @@ form1.addEventListener("submit", e => {
   else if(!telefon.validity.valid) {
     e.preventDefault();
     showTelefonError()
+  }
+  else if(!password1.validity.valid){
+    e.preventDefault()
+    showPassword1Error()
+  }
+  else if(!password2.validity.valid){
+    e.preventDefault()
+    showPassword2Error()
   }
 })
 
