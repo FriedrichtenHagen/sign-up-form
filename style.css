@@ -137,7 +137,8 @@ label#pwlabel1, label#pwlabel2{
 .required::after{
   content: "Passwords dont match";
   color: red;
-
+  font-size: 0.8rem;
+  max-width: 77px;
 }
 
 .error {
